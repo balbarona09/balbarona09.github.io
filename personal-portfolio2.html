@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="personal-portfolio2.css">
+		<title>John Michael V. Balbarona - Portfolio</title>
+		<script src="https://kit.fontawesome.com/16c4a07abd.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="#" class="nav-left">john</a>
+			<div class="nav-right">
+				<a href="#skills-section" onclick="showMenu()">Skills</a>
+				<a href="#projects" onclick="showMenu()">Projects</a>
+				<a href="#footer" onclick="showMenu()">Contacts</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="showMenu()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</nav>
+		
+		<div id="welcome-section">
+			<div>
+				<h1>Hi,<br>I'm John,<br>web developer.</h1>
+				<p>Front End Developer</p>
+				<a href="#footer">Contact me!</a>
+			</div>
+		</div>
+		
+		<div id="skills-section">
+			<div class="section1">
+				<p>Hi, I'm John. Nice to meet you.</p>
+				<p>I am a front end web developer. I provide the front end side of a website.
+				I am passsionate about web development. I can prototype website in paper and convert
+				to html, css and javascript.
+				</p>
+			</div>
+			<div class="section2">
+				<div>
+					<i class="fab fa-html5"></i>
+					<h2>HTML</h2>
+					<p>I code well structured HTML with accessiblity in mind using semantic elements.
+					</p>
+					<p class="color">Developer Tools</p>
+					<ul>
+						<li>Notepad++</li>
+						<li>Visual Studio Code</li>
+					</ul>
+				</div>
+				<div>
+					<i class="fab fa-css3"></i>
+					<h2>CSS</h2>
+					<p>Using CSS, I can make a website looks good.<br>
+					I can design the flow layout of the website<br>
+					I can make the website responsive.
+					</p>
+					<p class="color">Developer Tools</p>
+					<ul>
+						<li>Notepad++</li>
+						<li>Visual Studio Code</li>
+					</ul>
+				</div>
+				<div>
+					<i class="fab fa-js-square"></i>
+					<h2>Javascript</h2>
+					<p>With javascript, I can make a website more interactive
+					and even more responsive.
+					</p>
+					<p class="color">Developer Tools</p>
+					<ul>
+						<li>Notepad++</li>
+						<li>Visual Studio Code</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="projects">
+			<p class="recent">My Recent Projects</p>
+			<section class="project-tile">
+				<img src="images/presentation1.jpg" alt="blog">
+				<h3>Blog Site</h3>
+				<p>A personal blog site.</p>
+				<a href="blog.html" target="_blank">Visite site</a>
+			</section><hr>
+			
+			<section class="project-tile">
+				<img src="images/portfolio/Slide4.png" alt="Survey Form">
+				<h3>Survey Form</h3>
+				<p>An example of Survey form</p>
+				<a href="survey-form.html" target="_blank">Visite site</a>
+			</section><hr>
+			
+			<section class="project-tile">
+				<img src="images/Snake.png">
+				<h3>Snake Game</h3>
+				<p>A snake game</p>
+				<a href="snake.html" target="_blank">Visite site</a>
+			</section><hr>
+			
+			<section class="project-tile">
+				<img src="images/portfolio/Slide3.png">
+				<h3>Technical Documentation</h3>
+				<p>A technical documentation about html</p>
+				<a href="#">Visite site</a>
+			</section><hr>
+		</div>
+				
+		<footer id="footer">
+			<h4>Get in Touch</h4><br>
+			<p>Email: <a href="mailto:balbarona09@gmail.com">balbarona09@gmail.com</a></p><br>
+			<p>Phone number: <a href="tel:{09664455680}">+639664455680</a></p><br>
+			<a href="https://www.facebook.com/johnmichael.balbarona.1" id="profile-link" target="_blank">Facebook</a>
+		</footer>
+		<script>
+		function showMenu() {
+			var top_nav = document.getElementById("navbar");
+			if (top_nav.classList.contains("responsive")) {
+				top_nav.classList.remove("responsive");
+			} else {
+				top_nav.classList.add("responsive");
+			}
+		}
+		</script>
+	</body>
+</html>
