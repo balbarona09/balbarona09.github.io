@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/survey-form.css">
+		<title>Survey Form</title>
+	</head>
+	<body class="background">
+		<div class="background-transparent center">
+		<div class="h1-p-container">
+			<h1 id="title">PortFolio Survey Form</h1>
+			<p id="description"><i>this is a survey form for my portfolio</i></p>
+		</div>
+		<div class="form-container">
+			<form id="survey-form">
+				<label for="name" id="name-label">Name</label><br>
+				<input type="text" name="name" id="name" placeholder="Enter name" required><br>
+				
+				<label for="email" id="email-label">Email</label><br>
+				<input type="email" name="email" id="email" placeholder="Enter email" required><br>
+				
+				<label for="number" id="number-label">Number</label><br>
+				<input type="number" min="0" max="9" name="number" id="number" placeholder="Enter number" required><br>
+				
+				<label for="dropdown">Which option best describe you?</label><br>
+				<select name="dropdown" id="dropdown">
+					<option value="option1">Option 1</option>
+					<option value="option2">Option 2</option>
+					<option value="option3">Option 3</option>
+				</select><br>
+				<p>Select your favorite color</p>
+				<input type="radio" name="radio-buttons" Value="radio1" id="radio1">
+				<label for="radio1">Red</label><br>
+				<input type="radio" name="radio-buttons" Value="radio2" id="radio2">
+				<label for="radio2">Blue</label><br>
+				<input type="radio" name="radio-buttons" Value="radio3" id="radio3">
+				<label for="radio3" class="margin-bottom">Green</label><br>
+				
+				<p>Select programming language you know</p>
+				<input type="checkbox" name="checkbox" Value="checkbox1" id="checkbox1">
+				<label for="checkbox1">Java</label><br>
+				<input type="checkbox" name="checkbox" Value="checkbox2" id="checkbox2">
+				<label for="checkbox2">C++</label><br>
+				<input type="checkbox" name="checkbox" Value="checkbox3" id="checkbox3">
+				<label for="checkbox3" class="margin-bottom">Php</label><br>
+				
+				<label for="comments">Any comments or suggestions?</label><br><br>
+				<textarea rows="10" cols="20" placeholder="Enter your comments here..." id="comments"></textarea><br>
+				
+				<input type="submit" id="submit">
+			</form>
+		</div>
+		</div>
+	</body>
+</html>
