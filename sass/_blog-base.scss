@@ -1,0 +1,70 @@
+$primary-color: hsl(270, 100%, 20%);
+$secondary-color: hsl(56, 100%, 50%);
+$third-color: hsl(30, 100%, 50%);
+$card-bg-color: white;
+$nav-link-color: white;
+$link-color: blue;
+$link-color-hover: red;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	min-height: 100vh;
+	background-color: hsl(0, 0%, 95%);
+}
+.list-type-none {
+	list-style-type: none;
+}
+.text-spacing {
+	line-height: 1.9em;
+	letter-spacing: .02em;
+}
+h1 {
+	font-size: 2.2em;
+}
+.sub-title {
+	margin-left: 1em;
+}
+.sub-title li::marker {
+	font-size: 1.5em;
+}
+.sub-title li h2 {
+	font-size: 1.5em;
+}
+.sub-title ul {
+	margin-left: 4em;
+}
+.body-text {
+	font-size: 1.1em;
+	color: #333;
+}
+.primary-link {
+	color: $link-color;
+	font-weight: 700;
+}
+.primary-link:hover {
+	color: $link-color-hover;
+}
+.section h5 {
+	font-size: 20px;
+	line-height: 2em;
+}
+.homepage a {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+	line-height: 2em;
+	font-size: 1.1em;
+	letter-spacing: .02em;
+}
+.homepage a:hover {
+	color: $primary-color;
+}
+.homepage-h1 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 2em;
+}

@@ -1,0 +1,55 @@
+@import "blog-base";
+
+nav {
+	background-color: $primary-color;
+	overflow: hidden;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 14px 0 14px 5rem;
+	
+	a {
+		color: $nav-link-color;
+		text-decoration: none;
+		padding: 0 16px;
+		float: left;
+		font: {
+			size: 18px;
+			weight: 700;
+		}
+	}
+	
+	a:hover {
+		color: $third-color;
+	}
+	
+	a.active {
+	color: $secondary-color;
+	}
+}
+@media screen and (max-width: 800px) {
+	nav {
+		padding-left: 0;
+	}
+}
+.card {
+	background-color: $card-bg-color;
+	border: .5px solid hsl(0, 0%, 80%);
+	padding: 20px;
+}
+.blog-image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.homepage img {
+	width: 100%;
+	height: auto;
+}
+footer {
+	background-color: hsl(270, 0%, 50%);
+	padding: 20px;
+	text-align: center;
+	color: white;
+}

@@ -1,0 +1,42 @@
+.container {
+	overflow: hidden;
+	margin: 20px 0;
+}
+.left {
+	float: left;
+	width: 60%;
+	margin: 0 5%;
+}
+.right {
+	float: right;
+	width: 25%;
+	margin-right: 5%;
+}
+.homepage {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.homepage section {
+	width: 48%;
+}
+@media screen and (max-width: 1024px){
+	.left {
+		margin: 0 2%;
+		width: 66%;
+	}
+	.right {
+		margin-right: 2%;
+		width: 28%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.left, .right {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.homepage section {
+		width: 100%;
+	}
+}
